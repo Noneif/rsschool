@@ -1,0 +1,77 @@
+@import "_fonts";
+
+%invalid {
+  color: #d31414;
+  border-color: #d31414;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  height: 55px;
+  width: 300px;
+  @include font-medium(16px, 140%, #ffffff);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  padding: 16px 0;
+  &:hover {
+    background: #e47209;
+  }
+  &:active {
+    background: #4b9200;
+  }
+}
+.round {
+  border-radius: 25px;
+}
+.square {
+  border-radius: 5px;
+}
+.fa-solid {
+}
+.fa-arrow-left-long {
+}
+.pets__right-pointer {
+}
+.fa-arrow-right-long {
+}
+
+.footer__email {
+  box-sizing: border-box;
+  height: 40px;
+  width: 230px;
+  padding: 10px;
+  @include font-regular(16px, 140%, #bdbdbd);
+  border-radius: 2px;
+  border-left: 0.7px solid #f9804b;
+  border-top: 0.7px solid #f9804b;
+  border-right: 0.7px solid #fe9013;
+  border-bottom: 0.7px solid #fe9013;
+  &:focus {
+    border-color: #4b9200;
+    outline: none;
+  }
+  &:invalid {
+    @extend %invalid;
+  }
+}
+.footer__submit {
+  box-sizing: border-box;
+  height: 40px;
+  width: 130px;
+  padding: 10px 40px;
+  @include font-regular(16px, 0, #000000);
+  border: 1px solid #333b41;
+  border-radius: 5px;
+  background: #f1f3f2;
+  align-items: center;
+  &:active {
+    color: #4b9200;
+    border-color: #4b9200;
+  }
+  &:invalid {
+    @extend %invalid;
+  }
+}

@@ -1,0 +1,58 @@
+@import "_fonts";
+@import "_buttons";
+
+.header {
+  //   grid-row: 1/2;
+  background: url("/noneif-JSFE2022Q3/online-zoo/assets/img/giant-panda.png");
+}
+.menu {
+  box-sizing: border-box;
+  height: 80px;
+  background: #000000;
+  padding: 18px 0 18px 225px;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 60px;
+
+  &__link {
+    align-self: center;
+    text-decoration: none;
+    @include font-medium(16px, 140px, #ffffff);
+  }
+
+  &__link-active {
+    align-self: center;
+    text-decoration: none;
+    @include font-medium(16px, 140%, #f9804b);
+  }
+}
+.watch__background {
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  left: calc(50% - 465px / 2 + 239.5px);
+  top: 92px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+}
+.watch__text {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: calc(50% - 500.31px / 2 + 330.15px);
+  top: 166px;
+  @include font-bold(106px, 75%, #ffffff);
+  text-align: center;
+  text-transform: uppercase;
+}
+.watch__favorite {
+  color: #ffee2e;
+}
+.watch-button-position {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+}
+.h1 {
+  display: none;
+}

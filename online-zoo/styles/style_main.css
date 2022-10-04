@@ -6,6 +6,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -340,4 +342,174 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.footer__submit:invalid, .footer__email:invalid {
+  color: #d31414;
+  border-color: #d31414;
+}
+
+.button {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 55px;
+  width: 300px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  padding: 16px 0;
+}
+.button:hover {
+  background: #e47209;
+}
+.button:active {
+  background: #4b9200;
+}
+
+.round {
+  border-radius: 25px;
+}
+
+.square {
+  border-radius: 5px;
+}
+
+.footer__email {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  width: 230px;
+  padding: 10px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #bdbdbd;
+  border-radius: 2px;
+  border-left: 0.7px solid #f9804b;
+  border-top: 0.7px solid #f9804b;
+  border-right: 0.7px solid #fe9013;
+  border-bottom: 0.7px solid #fe9013;
+}
+.footer__email:focus {
+  border-color: #4b9200;
+  outline: none;
+}
+.footer__submit {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  width: 130px;
+  padding: 10px 40px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0;
+  color: #000000;
+  border: 1px solid #333b41;
+  border-radius: 5px;
+  background: #f1f3f2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__submit:active {
+  color: #4b9200;
+  border-color: #4b9200;
+}
+.header {
+  background: url("/noneif-JSFE2022Q3/online-zoo/assets/img/giant-panda.png");
+}
+
+.menu {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 80px;
+  background: #000000;
+  padding: 18px 0 18px 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+}
+.menu__link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140px;
+  color: #ffffff;
+}
+.menu__link-active {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #f9804b;
+}
+
+.watch__background {
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  left: calc(50% - 232.5px + 239.5px);
+  top: 92px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+}
+
+.watch__text {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: calc(50% - 250.155px + 330.15px);
+  top: 166px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 106px;
+  line-height: 75%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.watch__favorite {
+  color: #ffee2e;
+}
+
+.watch-button-position {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.h1 {
+  display: none;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 780px 720px (1005px)[2] 920px 445px;
+  grid-template-rows: 780px 720px repeat(2, 1005px) 920px 445px;
+      grid-template-areas: "header" "main" "footer";
 }

@@ -1,2 +1,154 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import "_fonts";
 @import "_normalize";
+@import "_header";
+
+.container {
+  display: grid;
+  grid-template-rows: 780px 720px repeat(2, 1005px) 920px 445px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.main {
+  //   grid-area: "main";
+}
+.backstage {
+  &__photo {
+  }
+
+  &__text {
+  }
+
+  &__main-text {
+  }
+}
+.title {
+}
+.subtitle {
+}
+.pets {
+  &__left-pointer {
+  }
+
+  &__right-pointer {
+  }
+}
+.fa-solid {
+}
+.fa-arrow-left-long {
+}
+.fa-arrow-right-long {
+}
+.pets-type {
+  &__img {
+  }
+
+  &__details {
+  }
+}
+.details {
+  &__title {
+  }
+
+  &__text {
+  }
+}
+.pick-and-feed-big {
+}
+.pick-and-feed-small {
+  &__title {
+  }
+
+  &__big-text {
+  }
+
+  &__usual-text {
+  }
+
+  &__link {
+  }
+
+  &__subtitle {
+  }
+
+  &__pictures {
+  }
+
+  &__single-pic {
+  }
+
+  &__pic {
+  }
+
+  &__arrow {
+  }
+
+  &__icon-arrow {
+  }
+}
+.figcaption {
+}
+.testimonials {
+  &__title {
+  }
+
+  &__boxes {
+  }
+
+  &__single-box {
+  }
+
+  &__icon {
+  }
+
+  &__name {
+  }
+
+  &__location-date {
+  }
+
+  &__text {
+  }
+}
+.square {
+}
+.footer {
+  &__row-1 {
+  }
+
+  &__logo-link {
+  }
+
+  &__email-box {
+  }
+
+  &__email {
+  }
+
+  &__submit {
+  }
+
+  &__row-2 {
+  }
+
+  &__row-3 {
+  }
+
+  &__social-links {
+  }
+
+  &__link {
+  }
+}
+.fa-brands {
+}
+.fa-facebook {
+}
+.fa-square-twitter {
+}
+.fa-square-instagram {
+}
+.fa-youtube {
+}
