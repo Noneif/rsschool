@@ -1,0 +1,39 @@
+@import "_fonts";
+
+.backstage {
+  display: flex;
+  margin: 140px 220px 180px;
+  position: relative;
+
+  &__bg-photo {
+    position: absolute;
+    top: -130px;
+    right: -220px;
+  }
+
+  &__photo {
+    min-width: 610px;
+    margin-right: 90px;
+  }
+
+  &__text {
+    min-width: 465px;
+  }
+
+  &__small-text {
+    @include font-regular(16px, 130%, #333b41);
+    margin-bottom: 55px;
+  }
+
+  &__main-text {
+    @include font-regular(16px, 140%, #333b41);
+  }
+}
+.title {
+  @include font-regular(48px, 120%, #333b41);
+  margin-bottom: 20px;
+}
+.subtitle {
+  @include font-regular(24px, 120%, #333b41);
+  margin-bottom: 35px;
+}

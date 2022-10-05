@@ -1,6 +1,7 @@
 @import "_fonts";
 @import "_normalize";
 @import "_header";
+@import "_section-backstage";
 
 .container {
   display: grid;
@@ -14,20 +15,7 @@
 .main {
   //   grid-area: "main";
 }
-.backstage {
-  &__photo {
-  }
 
-  &__text {
-  }
-
-  &__main-text {
-  }
-}
-.title {
-}
-.subtitle {
-}
 .pets {
   &__left-pointer {
   }

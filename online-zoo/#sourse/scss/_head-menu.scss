@@ -1,0 +1,23 @@
+@import "_fonts";
+
+.menu {
+  box-sizing: border-box;
+  height: 80px;
+  background: #000000;
+  padding: 18px 0 18px 225px;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 60px;
+
+  &__link {
+    align-self: center;
+    text-decoration: none;
+    @include font-medium(16px, 140px, #ffffff);
+  }
+
+  &__link-active {
+    align-self: center;
+    text-decoration: none;
+    @include font-medium(16px, 140%, #f9804b);
+  }
+}
