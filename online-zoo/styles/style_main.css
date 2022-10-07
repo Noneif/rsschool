@@ -684,7 +684,6 @@ template {
 .pets-type:hover .pets-type__details {
   -webkit-transform: translateY(73px);
           transform: translateY(73px);
-  opacity: 1;
   background: rgba(0, 0, 0, 0.0392156863);
   -webkit-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
@@ -697,6 +696,7 @@ template {
   height: 345px;
   border-radius: 5px;
   position: relative;
+  z-index: 2;
 }
 
 .details {
@@ -711,7 +711,7 @@ template {
   top: -63px;
   -webkit-transition: 1s;
   transition: 1s;
-  opacity: 0;
+  z-index: 1;
 }
 
 .details > *:nth-child(1) {
