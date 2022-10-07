@@ -1,5 +1,3 @@
-@import "_fonts";
-
 %invalid {
   color: #d31414;
   border-color: #d31414;
@@ -10,7 +8,7 @@
   box-sizing: border-box;
   height: 55px;
   width: 300px;
-  @include font-medium(16px, 140%, #ffffff);
+  @include font-medium(16px, 150%, #ffffff);
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -32,10 +30,31 @@
 .fa-solid {
 }
 .fa-arrow-left-long {
+  box-sizing: border-box;
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  padding: 23px 23px;
+  color: #ffffff;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  cursor: pointer;
+  &:active {
+    background: #4b9200;
+  }
 }
-.pets__right-pointer {
-}
+
 .fa-arrow-right-long {
+  box-sizing: border-box;
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  padding: 23px 23px;
+  color: #ffffff;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  cursor: pointer;
+  &:active {
+    background: #4b9200;
+  }
 }
 
 .footer__email {
@@ -43,7 +62,7 @@
   height: 40px;
   width: 230px;
   padding: 10px;
-  @include font-regular(16px, 140%, #bdbdbd);
+  @include font-regular(16px, 150%, #bdbdbd);
   border-radius: 2px;
   border-left: 0.7px solid #f9804b;
   border-top: 0.7px solid #f9804b;

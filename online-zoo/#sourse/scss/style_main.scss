@@ -1,48 +1,28 @@
 @import "_fonts";
+@import "_buttons";
 @import "_normalize";
+
 @import "_header";
 @import "_section-backstage";
+@import "_pets-index";
+
+@import "_footer";
 
 .container {
   display: grid;
-  grid-template-rows: 780px 720px repeat(2, 1005px) 920px 445px;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  grid-template:
+    [row1-start] "header" 780px [row1-end]
+    [row2-start] "main" 720px [row2-end]
+    [row3-start] "main" 1005px [row3-end]
+    [row4-start] "main" 1005px [row4-end]
+    [row5-start] "main" 920px [row5-end]
+    [row6-start] "footer" 445px [row6-end]
+    / auto;
 }
 
 .main {
-  //   grid-area: "main";
 }
 
-.pets {
-  &__left-pointer {
-  }
-
-  &__right-pointer {
-  }
-}
-.fa-solid {
-}
-.fa-arrow-left-long {
-}
-.fa-arrow-right-long {
-}
-.pets-type {
-  &__img {
-  }
-
-  &__details {
-  }
-}
-.details {
-  &__title {
-  }
-
-  &__text {
-  }
-}
 .pick-and-feed-big {
 }
 .pick-and-feed-small {
@@ -101,42 +81,4 @@
   }
 }
 .square {
-}
-.footer {
-  &__row-1 {
-  }
-
-  &__logo-link {
-  }
-
-  &__email-box {
-  }
-
-  &__email {
-  }
-
-  &__submit {
-  }
-
-  &__row-2 {
-  }
-
-  &__row-3 {
-  }
-
-  &__social-links {
-  }
-
-  &__link {
-  }
-}
-.fa-brands {
-}
-.fa-facebook {
-}
-.fa-square-twitter {
-}
-.fa-square-instagram {
-}
-.fa-youtube {
 }
