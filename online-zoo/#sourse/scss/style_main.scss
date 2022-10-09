@@ -5,6 +5,7 @@
 @import "_header";
 @import "_section-backstage";
 @import "_pets-index";
+@import "_pick-and-feed-big";
 
 @import "_footer";
 
@@ -23,41 +24,6 @@
 .main {
 }
 
-.pick-and-feed-big {
-}
-.pick-and-feed-small {
-  &__title {
-  }
-
-  &__big-text {
-  }
-
-  &__usual-text {
-  }
-
-  &__link {
-  }
-
-  &__subtitle {
-  }
-
-  &__pictures {
-  }
-
-  &__single-pic {
-  }
-
-  &__pic {
-  }
-
-  &__arrow {
-  }
-
-  &__icon-arrow {
-  }
-}
-.figcaption {
-}
 .testimonials {
   &__title {
   }
