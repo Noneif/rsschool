@@ -81,8 +81,8 @@
   height: 40px;
   width: 130px;
   padding: 10px 40px;
-  @include font-regular(16px, 0, #000000);
-  border: 1px solid #333b41;
+  @include font-regular(16px, 0, #d31414);
+  border: 1px solid #d31414;
   border-radius: 5px;
   background: #f1f3f2;
   align-items: center;
@@ -90,7 +90,7 @@
     color: #4b9200;
     border-color: #4b9200;
   }
-  &:invalid {
-    @extend %invalid;
-  }
+  // &:invalid {
+  //   @extend %invalid;
+  // }
 }

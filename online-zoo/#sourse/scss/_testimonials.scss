@@ -1,6 +1,6 @@
 .testimonials {
   grid-area: main;
-  padding: 140px 220px 157px;
+  padding: 140px 220px 180px;
   position: relative;
 
   &__bg-image {
@@ -17,6 +17,7 @@
 
   &__boxes {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
     justify-content: space-between;
   }
@@ -111,5 +112,5 @@
   }
 }
 .button-feedback {
-  margin-top: 60px;
+  margin-top: 30px;
 }

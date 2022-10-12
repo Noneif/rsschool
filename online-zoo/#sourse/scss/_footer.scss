@@ -1,12 +1,18 @@
 .footer {
   grid-area: footer;
+  background: #111115;
+  padding: 40px 220px 50px;
   &__row-1 {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__logo-link {
   }
 
   &__email-box {
+    @include font-regular(24px, 120%, #ffffff);
+    margin-bottom: 15px;
   }
 
   &__email {
@@ -19,21 +25,78 @@
   }
 
   &__row-3 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
   }
 
   &__social-links {
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   &__link {
+    & a {
+      @include font-regular(16px, 140%, #ffffff);
+      text-decoration: none;
+    }
   }
 }
 .fa-brands {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+  text-align: center;
+  background: rgba(196, 196, 196, 0.5);
+  border-radius: 50%;
+  margin: 5px 10px 5px 0;
 }
-.fa-facebook {
+.fa-facebook-f {
+  padding: 5px 8px;
 }
-.fa-square-twitter {
+.fa-twitter {
+  padding: 6px 5px;
 }
-.fa-square-instagram {
+.fa-instagram {
+  padding: 5px;
 }
 .fa-youtube {
+  padding: 5px 4px;
+}
+
+.menu-footer {
+  grid-row: 1 / 2;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 290px;
+}
+.menu-footer__link-footer-active {
+  text-decoration: none;
+  @include font-regular(16px, 140%, #f9804b);
+}
+.menu-footer__link-footer {
+  text-decoration: none;
+  @include font-regular(16px, 140%, #ffffff);
+  padding-left: 60px;
+}
+
+.menu-footer__link-footer-design {
+  display: inline-block;
+  text-decoration: none;
+  @include font-thin(16px, 130%, #ffffff);
+  margin-left: 170px;
+}
+
+.donate {
+  margin: 35px 0 45px;
 }
