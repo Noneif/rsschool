@@ -11,18 +11,22 @@
     display: inline-block;
     text-decoration: none;
     @include font-medium(16px, 140px, #ffffff);
-  }
 
-  &__link-active {
-    display: inline-block;
-    text-decoration: none;
-    @include font-medium(16px, 140%, #f9804b);
-  }
+    & img {
+      display: block;
+    }
 
-  &__link-design {
-    display: inline-block;
-    text-decoration: none;
-    @include font-medium(16px, 140px, #ffffff);
-    margin-left: 440px;
+    &_active {
+      display: inline-block;
+      text-decoration: none;
+      @include font-medium(16px, 140%, #f9804b);
+    }
+
+    &_design {
+      display: inline-block;
+      text-decoration: none;
+      @include font-medium(16px, 140px, #ffffff);
+      margin-left: 440px;
+    }
   }
 }

@@ -478,7 +478,10 @@ template {
   line-height: 140px;
   color: #ffffff;
 }
-.menu__link-active {
+.menu__link img {
+  display: block;
+}
+.menu__link_active {
   display: inline-block;
   text-decoration: none;
   font-family: Roboto;
@@ -487,7 +490,7 @@ template {
   line-height: 140%;
   color: #f9804b;
 }
-.menu__link-design {
+.menu__link_design {
   display: inline-block;
   text-decoration: none;
   font-family: Roboto;
@@ -1120,15 +1123,6 @@ template {
   margin-left: 290px;
 }
 
-.menu-footer__link-footer-active {
-  text-decoration: none;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #f9804b;
-}
-
 .menu-footer__link-footer {
   text-decoration: none;
   font-family: Roboto;
@@ -1138,10 +1132,17 @@ template {
   color: #ffffff;
   padding-left: 60px;
 }
-
-.menu-footer__link-footer-design {
-  display: inline-block;
+.menu-footer__link-footer_active {
   text-decoration: none;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #f9804b;
+}
+.menu-footer__link-footer_design {
+  text-decoration: none;
+  display: inline-block;
   font-family: Roboto;
   font-weight: 100;
   font-size: 16px;

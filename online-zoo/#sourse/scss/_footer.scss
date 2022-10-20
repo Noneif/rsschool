@@ -7,21 +7,9 @@
     justify-content: space-between;
   }
 
-  &__logo-link {
-  }
-
   &__email-box {
     @include font-regular(24px, 120%, #ffffff);
     margin-bottom: 15px;
-  }
-
-  &__email {
-  }
-
-  &__submit {
-  }
-
-  &__row-2 {
   }
 
   &__row-3 {
@@ -80,21 +68,23 @@
   align-items: flex-end;
   margin-left: 290px;
 }
-.menu-footer__link-footer-active {
-  text-decoration: none;
-  @include font-regular(16px, 140%, #f9804b);
-}
+
 .menu-footer__link-footer {
   text-decoration: none;
   @include font-regular(16px, 140%, #ffffff);
   padding-left: 60px;
-}
 
-.menu-footer__link-footer-design {
-  display: inline-block;
-  text-decoration: none;
-  @include font-thin(16px, 130%, #ffffff);
-  margin-left: 170px;
+  &_active {
+    text-decoration: none;
+    @include font-regular(16px, 140%, #f9804b);
+  }
+
+  &_design {
+    text-decoration: none;
+    display: inline-block;
+    @include font-thin(16px, 130%, #ffffff);
+    margin-left: 170px;
+  }
 }
 
 .donate {
