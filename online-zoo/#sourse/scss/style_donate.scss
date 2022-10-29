@@ -1,0 +1,21 @@
+@import "_fonts";
+@import "_buttons";
+@import "_normalize";
+
+@import "_head-menu";
+@import "_main_donate";
+@import "_footer";
+
+.container {
+  display: grid;
+  grid-template:
+    [row1-start] "header" 470px [row1-end]
+    [row2-start] "main" 1480px [row2-end]
+    [row3-start] "footer" 445px [row3-end]
+    / auto;
+}
+
+.header__bg {
+  height: 390px;
+  background: url("/online-zoo/assets/img/panda_bg.png") 0 0/100% 100% no-repeat;
+}

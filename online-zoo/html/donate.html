@@ -12,8 +12,8 @@
     <div class="container">
         <header class="header">
             <nav class="menu">
-                <a href="#" class="menu__link"><img src="../assets/icons/logo_footer.png" alt="logo" height="50"
-                        width="80"></a>
+                <a href="index.html" class="menu__link"><img src="../assets/icons/logo_footer.png" alt="logo"
+                        height="50" width="80"></a>
                 <a href="/online-zoo/html/index.html" class="menu__link">About</a>
                 <a href="#" class="menu__link">Map</a>
                 <a href="#" class="menu__link">Zoos</a>
@@ -23,20 +23,25 @@
                     class="menu__link_design" target="_blank">Designed
                     by &copy;</a>
             </nav>
-            <h1 class="h1" id="#PetStory">PetStory Online</h1>
+            <div class="header__bg"></div>
+            <h1 class="h1" id="#PetStory" style="display: none;">PetStory Online</h1>
         </header>
         <main>
             <div class="info-block">
                 <div class="info-block-title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</div>
-                <div class="info-block-text">Even though the Zoo has been able to reopen, we are at a greatly reduced
-                    capacity with educational programs and public
-                    and private events cancelled or postponed for additional months. We need you now more than ever to
+                <div class="info-block-text"><span>Even though the Zoo has been able to reopen, we are at a greatly
+                        reduced
+                        capacity with educational programs and public
+                        and private events cancelled or postponed for additional months.</span> We need you now more
+                    than ever to
                     help ensure that we
                     overcome these challenges. We have been actively raising funds in the community, and we are grateful
                     for the generosity.
-                    But much more support is still needed, and we need your help! Please consider a gift today &ndash;
-                    no matter what size &ndash; to
-                    help us sustain our mission.</div>
+                    <span>But much more support is still needed, and we need your help! Please consider a gift today
+                        &ndash;
+                        no matter what size &ndash; to
+                        help us sustain our mission.</span>
+                </div>
             </div>
             <div class="pick-and-feed-big-title">Donation Information</div>
             <div class="pick-and-feed-small">
@@ -44,33 +49,55 @@
                 <div class="pick-and-feed-small__text">We know the animals bring you joy, and in these extraordinary
                     times, we&rsquo;re glad.</div>
                 <div class="pets-calculation">
-                    <div class="pets-calculation-description">
-                        <div class="pets-calculation-description-number">4</div>
-                        <div class="pets-calculation-description-multiply"><i class="fa-solid fa-xmark"></i></div>
-                        <div class="pets-calculation-description-text">Panda diet for the day.</div>
+                    <div class="pets-calculation__description">
+                        <div class="pets-calculation__description_number">4<span
+                                class="pets-calculation__description_multiply"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+
+                        <div class="pets-calculation__description_text">Panda diet for the day.</div>
                     </div>
-                    <img class="pets-calculation-icon" src="/online-zoo/assets/icons/panda_widget1.png"
+                    <img class="pets-calculation__icon" src="/online-zoo/assets/icons/panda_widget1.png"
                         alt="panda-widget">
                 </div>
                 <form class="amount">
-                    <label for="amount">Amount</label>
-                    <input type="range" min="1" max="8" step="1" value="1" id="amount" class="amount__range">
+                    <label for="amount" class="amount__title">Amount</label>
+                    <div class="amount__bg">
+                        <div class="amount__line">
+                            <input type="radio" id="$5000" name="payment-size" value="$5000" class="amount__size">
+                            <input type="radio" id="$2000" name="payment-size" value="$2000" class="amount__size">
+                            <input type="radio" id="$1000" name="payment-size" value="$1000" class="amount__size"
+                                checked>
+                            <input type="radio" id="$500" name="payment-size" value="$500" class="amount__size">
+                            <input type="radio" id="$250" name="payment-size" value="$250" class="amount__size">
+                            <input type="radio" id="$100" name="payment-size" value="$100" class="amount__size">
+                            <input type="radio" id="$50" name="payment-size" value="$50" class="amount__size">
+                            <input type="radio" id="$25" name="payment-size" value="$25" class="amount__size">
+                        </div>
+                    </div>
+
                     <ul class="amount__list">
-                        <li class="amount__sum">$ 5000</li>
-                        <li class="amount__sum">$ 2000</li>
-                        <li class="amount__sum">$ 1000</li>
-                        <li class="amount__sum">$ 500</li>
-                        <li class="amount__sum">$ 250</li>
-                        <li class="amount__sum">$ 100</li>
-                        <li class="amount__sum">$ 50</li>
-                        <li class="amount__sum">$ 25</li>
+                        <li class="amount__sum">$5000</li>
+                        <li class="amount__sum">$2000</li>
+                        <li class="amount__sum">$1000</li>
+                        <li class="amount__sum">$500</li>
+                        <li class="amount__sum">$250</li>
+                        <li class="amount__sum">$100</li>
+                        <li class="amount__sum">$50</li>
+                        <li class="amount__sum">$25</li>
                     </ul>
-                    <input type="number" minlength="1" maxlength="4" placeholder="$" class="amount__another-sum">
+                    <div class="amount__another-sum-box"><input type="number" maxlength="4"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            placeholder="Another amount" class="amount__another-sum"><span>$</span></div>
                     <div class="payment">
-                        <input type="radio" class="payment__type" id="monthly" name="payment-type" value="monthly">
-                        <label for="monthly">Monthly</label>
-                        <input type="radio" class="payment__type" id="once" name="payment-type" value="once" checked>
-                        <label for="once">Once</label>
+                        <div>
+                            <input type="radio" class="payment__type" id="monthly" name="payment-type" value="monthly">
+                            <label for="monthly">Monthly</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="payment__type" id="once" name="payment-type" value="once"
+                                checked>
+                            <label for="once">Once</label>
+                        </div>
                     </div>
                     <a href="donate.html" class="button round button-feed">Feed a friend now</a>
                 </form>
@@ -79,7 +106,7 @@
         </main>
         <footer class="footer">
             <div class="footer__row-1">
-                <a href="#" class="footer__logo-link"><img src="../assets/icons/logo.png" alt="logo"></a>
+                <a href="index.html" class="footer__logo-link"><img src="../assets/icons/logo.png" alt="logo"></a>
                 <div class="footer__subscribe">
                     <div class="footer__email-box">Subscribe to our news</div>
                     <input type="email" class="footer__email" placeholder="Enter your email">
@@ -100,7 +127,7 @@
                                 class="fa-brands fa-youtube"></i>YouTube</a></li>
                 </ul>
                 <ul class="menu-footer">
-                    <li><a href="/online-zoo/html/index.html" class="menu-footer__link-footer">About</a></li>
+                    <li><a href="index.html" class="menu-footer__link-footer">About</a></li>
                     <li><a href="#" class="menu-footer__link-footer">Map</a></li>
                     <li><a href="#" class="menu-footer__link-footer">Zoos</a></li>
                     <li><a href="#" class="menu-footer__link-footer">Contact us</a></li>
